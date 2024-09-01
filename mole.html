@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+   
+    <link rel="stylesheet" href="mole.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sih Website Anti Doping</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">PurePlay</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#videos">VIDEOS</a></li>
+        <li><a href="index.html#games">GAMES</a></li>
+        <li><a href="module.html">MODULE</a></li>
+        <li><a href="index.html#package">ABOUT US</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-user"></i> PROFILE
+        </button>
+        <!-- Dropdown menu for Login and Signup -->
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Signup</a>
+        </div>
+      </div>
+      
+    </nav>
+    <h1>Whack-A-Risk: Stay Clean!</h1>
+    <h2 id="score">0</h2>
+    <h3 id="timer">Time Left: 60s</h3>
+    <!-- 3x3 -->
+    <div id="board">
+    </div>   
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="mole.js"></script>
+  </body>
+</html>

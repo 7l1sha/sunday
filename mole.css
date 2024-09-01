@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #ffffff;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(5, 16, 33);
+}
+
+#timer {
+    font-size: 20px;
+}
+
+#board {
+    width: 540px; /* 3 columns * 180px width */
+    height: 540px; /* 3 rows * 180px height */
+    margin: 0 auto;
+    display: grid; /* Change from flex to grid for easier control of layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
+
+    background: url("./field.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    width: 180px; 
+    height: 180px;
+    background-image: url("./badminton_shuttle.png");
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

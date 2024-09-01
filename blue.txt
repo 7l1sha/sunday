@@ -1,0 +1,94 @@
+ <section class="section__container discover__container">
+      <h2 class="section__header">Discover The World From Above</h2>
+      <p class="section__description">
+        Experience Breathtaking Views and Unique Perspectives
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4>Aerial Cityscapes</h4>
+          <p>
+            Witness the architectural marvels and bustling streets from
+            bird's-eye view, offering a unique perspective.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Coastal Wonders</h4>
+          <p>
+            Fly over pristine coastlines and turquoise waters, revealing hidden
+            coves and vibrant coral reefs.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Historic Landmarks</h4>
+          <p>
+            Observe the grandeur of ancient castles and other significant sites
+            in a way that ground tours can't offer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="form-container">
+        <h2 class="form-title">Additional Information</h2>
+        <p>Please provide the following details to complete your profile.</p>
+        <form id="additionalForm">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sport">Sports You Play</label>
+                <select id="sport" name="sport" required>
+                    <option disabled selected>Select your sport</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="otherSportContainer" style="display: none;">
+                <label for="otherSport">Please specify</label>
+                <input type="text" id="otherSport" name="otherSport">
+            </div>
+
+            <div class="form-group">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" name="profileImage" accept="image/*">
+            </div>
+
+            <!-- New Allergies Section -->
+            <div class="form-group">
+                <label>Are you allergic to anything?</label>
+                <div>
+                    <input type="radio" id="allergicYes" name="allergic" value="yes">
+                    <label for="allergicYes">Yes</label>
+                    <input type="radio" id="allergicNo" name="allergic" value="no">
+                    <label for="allergicNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-group" id="allergyDetailContainer" style="display: none;">
+                <label for="allergyDetail">Please specify</label>
+                <input type="text" id="allergyDetail" name="allergyDetail">
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any other information..."></textarea>
+            </div>
+
+            
+
+            <div class="button-container">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>

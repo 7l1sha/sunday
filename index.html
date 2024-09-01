@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sih Website Anti Doping</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">PurePlay</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#videos">VIDEOS</a></li>
+        <li><a href="index.html#games">GAMES</a></li>
+        <li><a href="module.html">MODULE</a></li>
+        <li><a href="index.html#package">ABOUT US</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+
+      <div class="nav__btns">
+        <button class="btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-user"></i> PROFILE
+        </button>
+        <!-- Dropdown menu for Login and Signup -->
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Signup</a>
+          <a href="Profile.html" class="dropdown-item">Profile</a>
+        </div>
+      </div>
+      
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p style="color: #ffffff; font-size: 20px;">VICTORY WITHOUT VICES</p>
+          <h1 style="color: #ffffff; font-size: 95px;">Play Clean, Stay True!</h1>
+          <div class="header__btns">
+            <button class="btn">Watch Modules</button>
+            <a href="module.html">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="videos">
+      <h2 class="section__header">Videos</h2>
+      <p class="section__description">
+        Watch Our Videos: Learn About Anti-Doping and Fair Play      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Integrity and Innovation</h4>
+              <p>Introduction to NADA India (Hindi)</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="fa-solid fa-play"></i></span><a href="https://www.youtube.com/watch?v=QdaYElTxW9U" style="color: inherit; text-decoration: none;"> Play</a>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Ethics and Excellence</h4>
+              <p>Rights & Responsibilities of Athletes (In Hindi)</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="fa-solid fa-play"></i></span><a href="https://www.youtube.com/watch?v=FCWMx9uJWPM" style="color: inherit; text-decoration: none;"> Play</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Honor and Innovation</h4>
+              <p>Inclusive Anti-Doping Education Module</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="fa-solid fa-play"></i></span><a href="https://www.youtube.com/watch?v=jPDmT6g1UTQ" style="color: inherit; text-decoration: none;"> Play</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="games">
+      <h2 class="section__header">Master Clean Sport with Ease!</h2>
+      <p class="section__description">
+        Effortlessly Learn Anti-Doping Rules Through Gamified Challenges
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Fair Play Match</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Boost Your Memory and Knowledge!</h4>
+            <p>
+              Matching cards to learn anti-doping rules, clean sport education is right at your fingertips, making the experience fun.
+            </p>
+            
+            <a href="card.html">
+              <h3 style="color: white;">
+                  Play <i class="fa-solid fa-play"></i>
+              </h3>
+          </a>
+          
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Doping Defender</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Sharpen Your Reflexes and Knowledge!</h4>
+            <p>
+              Showcase quick reflexes in whacking moles, every component of clean sport education is within reach, making learning a thrilling and dynamic adventure
+            </p>
+            <a href="mole.html">
+              <h3 style="color: white;">
+                  Play <i class="fa-solid fa-play"></i>
+              </h3>
+          </a>
+          
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+            <a href="card.html">
+              <h3 style="color: white;">
+                  Play <i class="fa-solid fa-play"></i>
+              </h3>
+          </a>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>
+            DOPING DEFENSE WITH PUREPLAY!</h4>
+        <p style="font-size: 20px;">
+          Step into a new realm of anti-doping with Pure Play, where integrity in sports meets interactive engagement. Our goal is to motivate and support athletes in their journey to uphold clean sport standards, whether you're training for a major event, setting personal goals, or championing fair play. At Pure Pay, we fuse education with gamification to create a dynamic and rewarding experience, ensuring every effort towards clean sport is both recognized and celebrated.        
+        </p></br>
+        <p style="font-size: 20px;">
+          With PurePlay as your partner, staying informed and compliant has never been more engaging. Our innovative challenges, rewards, and interactive features make learning about and adhering to anti-doping regulations a dynamic experience. From tracking your progress to participating in educational games, we are dedicated to turning the commitment to fair play into an exciting and rewarding journey.
+        </p>
+        
+      </div>
+    </section>
+    <section>
+      <h2 class="section__header">Leaderboard</h2>
+      <p class="section__description">
+        Leading the Pack: Top 3 Rankings
+      </p></br>
+      <div class="nav__btns" style="display: flex; justify-content: center; align-items: center;">
+        <button class="btn"><i class="fa-solid fa-trophy"></i> Leaderboard</button>
+      </div>
+      
+    <section class="section__container banner__container">
+      
+      <div class="banner__card">
+        <h4>1<sup>st</sup></h4>
+        <p style="font-size: 35px;">Aarya Gurav</p>
+      </div>
+      <div class="banner__card">
+        <h4>2<sup>nd</sup></h4>
+        <p style="font-size: 35px;">Alisha Inamdar</p>
+      </div>
+      <div class="banner__card">
+        <h4>3<sup>rd</sup></h4>
+        <p style="font-size: 35px;">Aditi Surve</p>
+      </div>
+    </section>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Celebrated by Thousands of Athletes</h2>
+      <p class="section__description">
+        Explore the success stories and proud achievements of our dedicated users. See how PurePlay has empowered athletes to embrace clean sport and make their mark.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  PurePlay has revolutionized my approach to clean sports. From mastering the nuances of anti-doping to earning rewards for my commitment, every feature was thoughtfully designed. I highly recommend PurePlay to any athlete who wants to elevate their dedication to fair play!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Faisal Chauhan</h4>
+                  <h5>Sports Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  My recent journey with PurePlay has been truly exceptional. The customized challenges and rewards offered a new dimension to my engagement with clean sports, elevating my experience beyond what I had imagined. I’m eagerly anticipating my next milestone and the continued support PurePlay will provide.
+
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Saylee Shirke</h4>
+                  <h5>Clean-Sports Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  PurePlay provided a groundbreaking approach to my anti-doping research. The innovative challenges and insights offered a fresh perspective and deepened my understanding of clean sports. I highly recommend PurePlay to fellow researchers and sports integrity advocates.
+                </p>
+
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Meghana Kovatte</h4>
+                  <h5>Sports Integrity Advocate
+
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Balancing commitment to clean sports with my training has been challenging, but PurePlay made it seamless. Their engaging challenges and valuable insights helped me stay motivated and focused on my goals. I’m excited to continue using Pure Pay for future milestones and achievements.
+
+
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Board Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">PurePlay.</a>
+          </div>
+          <p>
+            Navigate the world of sports with confidence and integrity through our dedicated anti-doping platform.</br> 
+            Your clean sport journey begins here, where transparent guidelines meet unwavering commitment to fair play.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Videos</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 987654321
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@pureplay
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Mumbai, India
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 PurePlay. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

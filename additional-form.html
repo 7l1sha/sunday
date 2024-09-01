@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="additional-form.css" />
+
+    <title>Sih Website Anti Doping</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">PurePlay</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#videos">VIDEOS</a></li>
+        <li><a href="index.html#games">GAMES</a></li>
+        <li><a href="module.html">MODULE</a></li>
+        <li><a href="index.html#package">ABOUT US</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-user"></i> PROFILE
+        </button>
+        <!-- Dropdown menu for Login and Signup -->
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Signup</a>
+        </div>
+      </div>
+      
+    </nav>
+
+    <div class="form-container">
+        <h2 class="form-title">Additional Information</h2>
+        <p>Please provide the following details to complete your profile.</p>
+        <form id="additionalForm">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sport">Sports You Play</label>
+                <select id="sport" name="sport" required>
+                    <option disabled selected>Select your sport</option>
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="otherSportContainer" style="display: none;">
+                <label for="otherSport">Please specify</label>
+                <input type="text" id="otherSport" name="otherSport">
+            </div>
+
+            <div class="form-group">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" name="profileImage" accept="image/*">
+            </div>
+
+            <!-- New Allergies Section -->
+            <div class="form-group">
+                <label>Are you allergic to anything?</label>
+                <div>
+                    <input type="radio" id="allergicYes" name="allergic" value="yes">
+                    <label for="allergicYes">Yes</label>
+                    <input type="radio" id="allergicNo" name="allergic" value="no">
+                    <label for="allergicNo">No</label>
+                </div>
+            </div>
+
+            <div class="form-group" id="allergyDetailContainer" style="display: none;">
+                <label for="allergyDetail">Please specify</label>
+                <input type="text" id="allergyDetail" name="allergyDetail">
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any other information..."></textarea>
+            </div>
+
+            
+
+            <div class="button-container">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div> 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="additional-form.js"></script>
+  </body>
+</html>

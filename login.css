@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+    --primary-color: #e12d26;
+    --primary-color-dark: #e12d26;
+  --text-dark: #0a0a0a;
+  --text-light: #737373;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+ 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul li {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.authbutton {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.authbutton button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.authbutton button:hover {
+  background-color: var(--primary-color);
+}
+
+.log-box {
+  max-width: var(--max-width);
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: var(--extra-light);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputf {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.inputf input, 
+.selectg {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--text-light);
+  border-radius: 0.5rem;
+}
+
+.inputf i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+}

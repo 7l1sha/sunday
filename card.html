@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="card.css" />
+
+    <title>Sih Website Anti Doping</title>
+  </head>
+  <body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">PurePlay</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#videos">VIDEOS</a></li>
+            <li><a href="index.html#games">GAMES</a></li>
+            <li><a href="module.html">MODULE</a></li>
+            <li><a href="index.html#package">ABOUT US</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="#">PROFILE</a></li>
+          </ul>
+  
+        <div class="nav__btns">
+          <button class="btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-user"></i> PROFILE
+          </button>
+          <!-- Dropdown menu for Login and Signup -->
+          <div id="dropdownMenu" class="dropdown-menu">
+            <a href="login.html" class="dropdown-item">Login</a>
+            <a href="signup.html" class="dropdown-item">Signup</a>
+          </div>
+        </div>
+        
+      </nav>
+
+    <section class="section__container discover__container">
+        <h2 class="section__header">Fair Play Match</h2>
+        <p class="section__description">
+            Pair sports with their corresponding anti-doping agents and see how well you know the fight against doping!
+        </p></br>
+        <div id="timer", style="text-align: center;"><p style="text-align: center;">Time: 00:00</p></div>
+        <div class="container">
+        <div class="game-board">
+            <!-- Card pairs -->
+            <div class="card" data-name="cycling">
+                <div class="front"></div>
+                <div class="back">Cycling</div>
+            </div>
+            <div class="card" data-name="TrackandField">
+                <div class="front"></div>
+                <div class="back">Track and Field</div>
+            </div>
+            <div class="card" data-name="Weightlifting">
+                <div class="front"></div>
+                <div class="back">Weightlifting</div>
+            </div>
+            <div class="card" data-name="Swimming">
+                <div class="front"></div>
+                <div class="back">Swimming</div>
+            </div>
+            <div class="card" data-name="Tennis">
+                <div class="front"></div>
+                <div class="back">Tennis</div>
+            </div>
+            <div class="card" data-name="Soccer">
+                <div class="front"></div>
+                <div class="back">Soccer (Football)</div>
+            </div>
+            <div class="card" data-name="Rugby">
+                <div class="front"></div>
+                <div class="back">Rugby</div>
+            </div>
+            <div class="card" data-name="Basketball">
+                <div class="front"></div>
+                <div class="back">Basketball</div>
+            </div>
+            <div class="card" data-name="Boxing">
+                <div class="front"></div>
+                <div class="back">Boxing</div>
+            </div>
+            <div class="card" data-name="Gymnastics">
+                <div class="front"></div>
+                <div class="back">Gymnastics</div>
+            </div>
+            <div class="card" data-name="IceHockey">
+                <div class="front"></div>
+                <div class="back">Ice Hockey</div>
+            </div>
+            <div class="card" data-name="Archery">
+                <div class="front"></div>
+                <div class="back">Archery</div>
+            </div>
+            <div class="card" data-name="Equestrian">
+                <div class="front"></div>
+                <div class="back">Equestrian</div>
+            </div>
+            <div class="card" data-name="Fencing">
+                <div class="front"></div>
+                <div class="back">Fencing</div>
+            </div>
+            <div class="card" data-name="Judo">
+                <div class="front"></div>
+                <div class="back">Diuretics</div>
+            </div>
+            <div class="card" data-name="Judo">
+                <div class="front"></div>
+                <div class="back">Judo</div>
+            </div>
+            <div class="card" data-name="Fencing">
+                <div class="front"></div>
+                <div class="back"> Anabolic Steroids</div>
+            </div>
+            <div class="card" data-name="Equestrian">
+                <div class="front"></div>
+                <div class="back">Sedatives (e.g Tranquilizers)</div>
+            </div>
+            <div class="card" data-name="cycling">
+                <div class="front"></div>
+                <div class="back">Erythropoietin (EPO)</div>
+            </div>
+            <div class="card" data-name="TrackandField">
+                <div class="front"></div>
+                <div class="back">Anabolic Steroids</div>
+            </div>
+            <div class="card" data-name="Weightlifting">
+                <div class="front"></div>
+                <div class="back">Human Growth Hormone (HGH)</div>
+            </div>
+            <div class="card" data-name="Swimming">
+                <div class="front"></div>
+                <div class="back">Blood Doping</div>
+            </div>
+            <div class="card" data-name="Tennis">
+                <div class="front"></div>
+                <div class="back">Stimulants (e.g Cocaine)</div>
+            </div>
+            <div class="card" data-name="Soccer">
+                <div class="front"></div>
+                <div class="back">Diuretics</div>
+            </div>
+            <div class="card" data-name="Rugby">
+                <div class="front"></div>
+                <div class="back">Painkillers (e.g Codeine)</div>
+            </div>
+            <div class="card" data-name="Basketball">
+                <div class="front"></div>
+                <div class="back">Cannabinoids (e.g THC)</div>
+            </div>
+            <div class="card" data-name="Boxing">
+                <div class="front"></div>
+                <div class="back">Beta-Blockers</div>
+            </div>
+            <div class="card" data-name="Gymnastics">
+                <div class="front"></div>
+                <div class="back">Stimulants</div>
+            </div>
+            <div class="card" data-name="IceHockey">
+                <div class="front"></div>
+                <div class="back">Corticosteroids</div>
+            </div>
+            <div class="card" data-name="Archery">
+                <div class="front"></div>
+                <div class="back">Stimulants (e.g Ephedrine)</div>
+            </div>
+            
+        </div>
+        <div class="description">
+            <h3>Match the Doping Agents for the Following:</h3></br>
+            <p>Cycling</br>
+            Track and Field</br>
+            Weightlifting</br>
+            Swimming</br>
+            Tennis</br>
+            Soccer (Football)</br>
+            Rugby</br>
+            Basketball</br>
+            Boxing</br>
+            Gymnastics</br>
+            Ice Hockey</br>
+            Archery</br>
+            Equestrian</br>
+            Fencing</br>
+            Judo</br>
+        </p>
+        </div>
+    </div>
+      </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="card.js"></script>
+  </body>
+</html>

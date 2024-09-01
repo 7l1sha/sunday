@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Sih Website Anti Doping</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">PurePlay</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#videos">VIDEOS</a></li>
+        <li><a href="index.html#games">GAMES</a></li>
+        <li><a href="module.html">MODULE</a></li>
+        <li><a href="index.html#package">ABOUT US</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+
+      <div class="nav__btns">
+        <button class="btn" onclick="toggleMenu()">
+          <i class="fa-solid fa-user"></i> PROFILE
+        </button>
+        <!-- Dropdown menu for Login and Signup -->
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="login.html" class="dropdown-item">Login</a>
+          <a href="signup.html" class="dropdown-item">Signup</a>
+        </div>
+      </div>
+      
+    </nav>
+
+    <div class="container">
+        <div class="profile-header">
+            <img src="profile.png" alt="Profile Photo" class="profile-photo">
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p>Age: 25</p>
+                <p>DOB: 1999-04-15</p>
+                <p>Email: john.doe@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+        </div>
+        <div class="profile-stats">
+            <h2>Sports Currently Playing</h2>
+            <p>Football, Basketball</p>
+        </br>
+            
+            <h2>Allergies</h2>
+            <p>Peanuts, Pollen</p>
+            
+            
+            <div class="performance-stats">
+                <h2>Performance Stats</h2>
+                <div class="stats-card">
+                    <h3>Matches Played</h3>
+                    <p>20</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Goals Scored</h3>
+                    <p>15</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Assists</h3>
+                    <p>10</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Average Rating</h3>
+                    <p>8.5</p>
+                </div>
+            </div>
+            
+            <h2>Points Earned</h2>
+            <p>1500 Points</p>
+
+            <div class="nutrition-chart">
+                <h2>Nutrient Chart</h2>
+                <img src="diet.png" alt="Nutrient Chart" class="chart">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
